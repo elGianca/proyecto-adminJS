@@ -11,29 +11,36 @@ import { HeaderComponent } from './shared/header/header.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { BreadcrumbsComponent } from './shared/breadcrumbs/breadcrumbs.component';
 
-//Rutas:
+// Rutas:
 import { APP_ROUTES } from './app.routes';
+
+// Modulos:
+import { PagesModule } from './pages/pages.module';
+
 
 import { PagesComponent } from './pages/pages.component';
 import { RegisterComponent } from './login/register.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    NopagefoundComponent,
-    DashboardComponent,
-    ProgressComponent,
-    Graficas1Component,
-    HeaderComponent,
-    SidebarComponent,
-    BreadcrumbsComponent,
-    PagesComponent,
-    RegisterComponent
+    RegisterComponent,
+    // NopagefoundComponent,
+    // DashboardComponent,
+    // ProgressComponent,
+    // Graficas1Component,
+    // HeaderComponent,
+    // SidebarComponent,
+    // BreadcrumbsComponent,
+    // PagesComponent
   ],
   imports: [
     BrowserModule,
-    APP_ROUTES
+    APP_ROUTES,
+    PagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
